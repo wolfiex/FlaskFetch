@@ -32,7 +32,7 @@ def testfn():
 ######## Data fetch ############
 @app.route('/getdata/<transaction_id>/<second_arg>', methods=['GET','POST'])
 def datafind(transaction_id,second_arg):
-    # POST request
+    # POST request okoi
     if request.method == 'POST':
         print('Incoming..')
         print(request.get_text())  # parse as text
